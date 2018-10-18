@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
 
-export default class Login extends React.Component {
+export class Login extends React.Component {
 
   handleButton=()=>{
     this.props.dispatch(ChangePage(2))
@@ -91,10 +91,11 @@ const styles = StyleSheet.create({
     lineHeight: 50,
   },
 });
-
+{/*
 function mapStateToProps(state){
   return {
   }
 }
 
 export default connect(mapStateToProps)(Login);
+*/}

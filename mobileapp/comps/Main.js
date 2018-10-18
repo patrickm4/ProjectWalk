@@ -5,8 +5,8 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import {connect} from "react-redux";
 import {ChangePage} from "../redux/actions.js"
 
-import Login from "./Login/login";
-import Profile from "./Profile/profile";
+import Login from "./Login/Login";
+import Profile from "./Profile/Profile";
 
 class Main extends React.Component {
 
