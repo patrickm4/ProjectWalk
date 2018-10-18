@@ -2,6 +2,11 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
 
 export default class Login extends React.Component {
+
+  handleButton=()=>{
+    this.props.dispatch(ChangePage(2))
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -29,6 +34,7 @@ export default class Login extends React.Component {
       <View style={styles.butView}>
         <TouchableOpacity
           style={styles.butBox}
+          onPress={this.handleButton}
           >
           <Text
             style={[styles.textContainer, {color:'white',}]}
@@ -85,3 +91,10 @@ const styles = StyleSheet.create({
     lineHeight: 50,
   },
 });
+
+function mapStateToProps(state){
+  return {
+  }
+}
+
+export default connect(mapStateToProps)(Login);
