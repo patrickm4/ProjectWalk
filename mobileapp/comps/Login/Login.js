@@ -1,6 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
 
+import {connect} from "react-redux";
+import {ChangePage} from "../../redux/actions.js"
+
 export class Login extends React.Component {
 
   handleButton=()=>{

@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
+import Login from "./Login/Login";
+import Profile from "./Profile/Profile";
 
 import {connect} from "react-redux";
 import {ChangePage} from "../redux/actions.js"
 
-import Login from "./Login/Login";
-import Profile from "./Profile/Profile";
 
 class Main extends React.Component {
 
@@ -15,9 +15,9 @@ class Main extends React.Component {
   }
 
   render() {
-
     var curpage = <Login />
 
+    {/*
     //we are changing state to use global state
     switch (this.props.page){
       case 1:
@@ -27,6 +27,7 @@ class Main extends React.Component {
       curpage = <Profile />
         break;
     }
+    */}
 
     return (
       <View style={styles.container}>

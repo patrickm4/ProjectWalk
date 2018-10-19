@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, Image, TouchableOpacity } from 'react-native';
 
 
-export default class Profile extends React.Component {
+export class Profile extends React.Component {
   render() {
     return (
       <View style={styles.container}>
