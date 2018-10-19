@@ -1,8 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Image, TouchableOpacity } from 'react-native';
 
+import {connect} from "react-redux";
+import {ChangePage} from "../../redux/actions.js"
 
-export class Profile extends React.Component {
+class Profile extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -93,3 +95,10 @@ const styles = StyleSheet.create({
     right: -112
   }
 });
+
+function mapStateToProps(state){
+  return {
+  }
+}
+
+export default connect(mapStateToProps)(Profile);

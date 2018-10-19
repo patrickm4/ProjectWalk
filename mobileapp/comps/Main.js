@@ -15,19 +15,20 @@ class Main extends React.Component {
   }
 
   render() {
+
     var curpage = <Login />
 
-    {/*
     //we are changing state to use global state
     switch (this.props.page){
       case 1:
       curpage = <Login />
         break;
       case 2:
-      curpage = <Profile />
+      curpage = <Profile/>
         break;
     }
-    */}
+
+
 
     return (
       <View style={styles.container}>
