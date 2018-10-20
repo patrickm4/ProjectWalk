@@ -1,4 +1,0 @@
-GOOGLE API KEY 
-AIzaSyAjmeDspw7sOJc5knFHDAw0XOnBB1cVA70
-
-pass the key with "key=API_KEY" parameter
