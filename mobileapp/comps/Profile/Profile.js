@@ -7,7 +7,7 @@ import {ChangePage} from "../../redux/actions.js"
 class Profile extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.pcontainer}>
 
 
         <Image style={styles.destinations} source={require('./assets/img/dest1.png')} />
@@ -34,16 +34,17 @@ class Profile extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  pcontainer: {
     flex: 1,
     backgroundColor: '#33936F',
+    width: 500,
     alignItems: 'center',
     justifyContent: 'center',
   },
   logoutButton: {
     position: 'absolute',
     bottom: 10,
-    left: 145,
+    left: 200,
     height: 40,
     backgroundColor: "#ECF0F1",
   },
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
     height: 80,
     position: 'absolute',
     top: 150,
-    left: 150,
+    left: 210,
     borderRadius: 40,
   },
   destText: {
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
     height: 80,
     position: 'absolute',
     top: 290,
-    left: 30,
+    left: 90,
     borderRadius: 40,
   },
   homeInfoText: {
@@ -87,12 +88,12 @@ const styles = StyleSheet.create({
     height: 80,
     position: 'absolute',
     top: 295,
-    right: 25,
+    right: 90,
   },
   settText: {
     color: "#ECF0F1",
     bottom: 28,
-    right: -112
+    right: -111
   }
 });
 
