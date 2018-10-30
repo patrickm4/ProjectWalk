@@ -1,12 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
 import {Location, Permissions} from 'expo';
-
 import { MapView } from 'expo';
-import { MapViewDirections } from 'expo';
+//import { MapViewDirections } from 'expo';
 
+import {connect} from "react-redux";
+import {ChangePage} from "../../redux/actions.js";
 
-export default class App extends React.Component {
+class Destination extends React.Component {
 
   async componentWillMount(){
     const { status } = await Permissions.askAsync( Permissions.LOCATION );
@@ -91,6 +92,7 @@ export default class App extends React.Component {
         <MapView.Marker
           coordinate={this.state.markerPosition}
           />
+        {/*
         <MapViewDirections
           origin={this.state.InitialPosition}
           destination={this.state.guildford}
@@ -99,6 +101,7 @@ export default class App extends React.Component {
           stroke={3}
           strokeCOlor="hotpink"
           />
+          */}
       </MapView>
     </View>
     );
@@ -122,3 +125,10 @@ const styles = StyleSheet.create({
    width: 400,
  },
 });
+
+function mapStateToProps(state){
+  return {
+  }
+}
+
+export default connect(mapStateToProps)(Destination);

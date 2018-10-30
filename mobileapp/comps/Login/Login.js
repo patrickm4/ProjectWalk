@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
 
 import {connect} from "react-redux";
-import {ChangePage} from "../../redux/actions.js"
+import {ChangePage} from "../../redux/actions.js";
 
 class Login extends React.Component {
 

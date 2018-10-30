@@ -1,11 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, Switch, Button} from 'react-native';
 
-export default class Settings extends React.Component {
+import {connect} from "react-redux";
+import {ChangePage} from "../../redux/actions.js";
+
+class Settings extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-       
+
     {/* TOP BAR   */}
         <Image style={styles.profileIcon} source={require('./assets/img/profile.png')}/>
         <Text style={styles.pCaption}>Profile</Text>
@@ -13,38 +16,38 @@ export default class Settings extends React.Component {
         <Text style={styles.dCaption}>Destinations</Text>
         <Image style={styles.settIcon} source={require('./assets/img/settings.png')}/>
         <Text style={styles.sCaption}>Settings</Text>
-        
-        
-        
+
+
+
      {/* GENERAL  */}
         <Text style={styles.genHeader}>General Settings</Text>
         <Text style={styles.notificationsBody}>Notifications</Text>
         <Switch style={styles.notifySwitch}/>
         <Text style={styles.locationBody}>Show My Location</Text>
         <Switch style={styles.locationSwitch}/>
-        
-        
-     {/*MAP SETTINGS*/}    
+
+
+     {/*MAP SETTINGS*/}
       <Text style={styles.mapHeader}>Map Settings</Text>
       <Text style={styles.DAbody}>Show Dangerous Activities</Text>
       <Switch style={styles.DASwitch}/>
       <Text style={styles.NBEbody}>Show Nearby Events</Text>
       <Switch style={styles.NBESwitch}/>
       <Text style={styles.STbody}>Allow Safety Tips</Text>
-      <Switch style={styles.STSwitch}/>   
+      <Switch style={styles.STSwitch}/>
       <Text style={styles.Checkbody}>Allow Checkpoints</Text>
       <Switch style={styles.checkSwitch}/>
-      
-      {/*PROFILE SETTINGS*/}  
+
+      {/*PROFILE SETTINGS*/}
       <Text style={styles.profileHeader}>Profile Settings</Text>
       <View style={styles.buttonView}>
       <Button title="Change Password" style={styles.passwordBut} />
-      <Button title="Change Email" style={styles.emailBut} /> 
+      <Button title="Change Email" style={styles.emailBut} />
       </View>
         </View>
-      
-      
-    
+
+
+
     );
   }
 }
@@ -177,8 +180,15 @@ const styles = StyleSheet.create({
   buttonView: {
   position: 'absolute',
    marginTop: 700,
-    
+
   },
-  
-  
+
+
 });
+
+function mapStateToProps(state){
+  return {
+  }
+}
+
+export default connect(mapStateToProps)(Settings);
