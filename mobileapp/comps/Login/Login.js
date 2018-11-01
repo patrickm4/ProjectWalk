@@ -6,11 +6,72 @@ import {ChangePage} from "../../redux/actions.js";
 
 class Login extends React.Component {
 
-  handleButton=()=>{
-    this.props.dispatch(ChangePage(2))
+  email="";
+  password="";
+
+  state = {
+    users:[]
+  }
+
+  handleFetch=()=>{
+    var fd = new FormData();
+    fd.append("email", this.email);
+    fd.append("password", this.password);
+    fetch("http://localhost:8888/insertusers.php", {
+      method: "POST",
+      body:fd
+    }).then((resp)=>{
+      return resp.json;
+    }).then((json)=> {
+      if(json){
+        alert("THANK YOU");
+      }
+    })
+  }
+
+  handleEmail=(text)=>{
+    this.email = text;
+  }
+
+  handlePass=(text)=>{
+    this.password = text;
+  }
+  
+  handleSelect=()=>{
+    var fd = new FormData();
+    fd.append("email", this.email);
+    fd.append("password", this.password);
+  
+    fetch("http://localhost:8888/selectuser.php",{
+      method:"POST",
+      body:fd
+    }).then((resp)=>{
+      return resp.json();
+    }).then((json)=>{
+      if(json.length == 0){
+        alert("Incorrect email or password");
+      }
+      else {
+        this.props.dispatch(ChangePage(2));
+      }
+
+        
+    }
+      
+    );
   }
 
   render() {
+
+    var users = this.state.users.map((obj, i)=>{
+      return(
+        <View key={i} style={{flexDirection:"row"}}>
+        <Text>{obj.email}</Text>
+        <Text>{obj.password}</Text>
+        </View>
+      )
+    })
+
     return (
       <View style={styles.container}>
         <Image
@@ -25,6 +86,8 @@ class Login extends React.Component {
           placeholder="Email"
           style={{height: 40, width: 250, borderColor: 'gray', borderWidth: 1}}
           underlineColorAndroid='transparent'
+          autoCapitalize="none"
+          onChangeText={this.handleEmail}
           />
       </View>
       <View style={styles.textInputBox}>
@@ -32,12 +95,14 @@ class Login extends React.Component {
           placeholder="Password"
           style={{height: 40, width: 250, borderColor: 'gray', borderWidth: 1}}
           underlineColorAndroid='transparent'
+          secureTextEntry={true}
+          onChangeText={this.handlePass}
           />
       </View>
       <View style={styles.butView}>
         <TouchableOpacity
           style={styles.butBox}
-          onPress={this.handleButton}
+          onPress={this.handleSelect}
           >
           <Text
             style={[styles.textContainer, {color:'white',}]}
