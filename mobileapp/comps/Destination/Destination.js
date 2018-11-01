@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import {Location, Permissions} from 'expo';
 import { MapView } from 'expo';
 //import { MapViewDirections } from 'expo';
@@ -67,12 +67,24 @@ class Destination extends React.Component {
   this.setState({ InitialPosition });
 }
 
+  handlePage=(num)=>{
+    this.props.dispatch(ChangePage(num))
+  }
+
   render() {
 
     const GOOGLE_MAPS_APIKEY  = "AIzaSyAjmeDspw7sOJc5knFHDAw0XOnBB1cVA70";
 
     return (
       <View style={styles.container}>
+        <TouchableOpacity
+          style={{left:0, top: 40, position: "absolute"}}
+          onPress={this.handlePage.bind(this, 2)}
+          >
+          <Text
+            style={{fontSize:30}}
+            >Back</Text>
+        </TouchableOpacity>
         <View
           style={{height:200}}
           >
