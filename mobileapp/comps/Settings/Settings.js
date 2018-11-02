@@ -9,15 +9,25 @@ class Settings extends React.Component {
     return (
       <View style={styles.container}>
 
-    {/* TOP BAR   */}
-        <Image style={styles.profileIcon} source={require('./assets/img/profile.png')}/>
-        <Text style={styles.pCaption}>Profile</Text>
-        <Image style={styles.destIcon} source={require('./assets/img/dest1.png')}/>
-        <Text style={styles.dCaption}>Destinations</Text>
+    {/* TOP BAR  
+        
+        
         <Image style={styles.settIcon} source={require('./assets/img/settings.png')}/>
         <Text style={styles.sCaption}>Settings</Text>
-
-
+ */}
+      <View style={{flexDirection: "row"}}>
+        <View style={{flexDirection: "column"}}>
+        <View>
+          <Image style={styles.profileIcon} source={require('./assets/img/profile.png')}/>
+          <Text style={styles.pCaption}>Profile</Text>
+        </View>
+        
+        <View>
+          <Image style={styles.destIcon} source={require('./assets/img/dest1.png')}/>
+        <Text style={styles.dCaption}>Destinations</Text>
+        </View>
+  </View>       
+</View>
 
      {/* GENERAL  */}
         <Text style={styles.genHeader}>General Settings</Text>
@@ -56,133 +66,27 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   profileIcon: {
     width: 65,
     height: 65,
-    position: 'absolute',
-    top: 40,
-    left: 15
+    left: -90,
+    top: 40
   },
   pCaption: {
-    position: 'absolute',
-    top: 110,
-    left: 26
+    left: -20,
+    top: 20
   },
   destIcon: {
     width: 65,
     height: 65,
-    position: 'absolute',
-    top: 40
+    left: 50,
+    top: -45 
   },
   dCaption: {
-    position: 'absolute',
-    top: 110
-  },
-  settIcon: {
-    width: 65,
-    height: 65,
-    position: 'absolute',
-    top: 45,
-    right: 20
-  },
-  sCaption: {
-    position: 'absolute',
-    top: 110,
-    right: 27
-  },
-  genHeader: {
-    fontSize: 25,
-    position: 'absolute',
-    top: 150,
-    left: 20,
-  },
-  notificationsBody: {
-    fontSize: 18,
-    position: 'absolute',
-    top: 195,
-    left: 20
-  },
-  notifySwitch: {
-    position: 'absolute',
-    right: 20,
-    top: 190
-  },
-  locationBody: {
-    fontSize: 18,
-    position: 'absolute',
-    top: 240,
-    left: 20
-  },
-  locationSwitch: {
-    position: 'absolute',
-    right: 20,
-    top: 235,
-  },
-  mapHeader: {
-    fontSize: 25,
-    position: 'absolute',
-    left: 20,
-    top: 290
-  },
-  DAbody: {
-    fontSize: 18,
-    position: 'absolute',
-    left: 20,
-    top: 335
-  },
-  DASwitch: {
-    position: 'absolute',
-    right: 20,
-    top: 330
-  },
-  NBEbody: {
-    fontSize: 18,
-    position: 'absolute',
-    left: 20,
-    top: 382
-  },
-  NBESwitch: {
-    position: 'absolute',
-    right: 20,
-    top: 378
-  },
-  STbody: {
-    fontSize: 18,
-    position: 'absolute',
-    left: 20,
-    top: 430
-  },
-  STSwitch: {
-    position: 'absolute',
-    right: 20,
-    top: 425
-  },
-  Checkbody: {
-    fontSize: 18,
-    position: 'absolute',
-    left: 20,
-    top: 477
-  },
-  checkSwitch: {
-    position: 'absolute',
-    right: 20,
-    top: 469
-  },
-  profileHeader: {
-    fontSize: 25,
-    left: 20,
-    top: 525,
-    position: 'absolute',
-  },
-  buttonView: {
-  position: 'absolute',
-   marginTop: 700,
-
-  },
-
+    top: -40,
+    left: 45
+  }
 
 });
 

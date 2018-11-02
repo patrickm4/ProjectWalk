@@ -55,6 +55,11 @@ class Login extends React.Component {
       this.props.dispatch(ChangePage(2));
     }
   }
+  
+  handlePage=()=>{
+    this.props.dispatch(ChangePage(2));
+  }
+  
 
     handlePage=()=>{
       this.props.dispatch(ChangePage(2));
