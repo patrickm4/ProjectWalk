@@ -36,30 +36,29 @@ class Login extends React.Component {
   handlePass=(text)=>{
     this.password = text;
   }
-  
-  handleSelect=()=>{
+
+  handleSelect=async ()=>{
     var fd = new FormData();
     fd.append("email", this.email);
     fd.append("password", this.password);
-  
-    fetch("http://localhost:8888/selectuser.php",{
+
+    var resp = await fetch("http://localhost:8888/selectuser.php",{
       method:"POST",
       body:fd
-    }).then((resp)=>{
-      return resp.json();
-    }).then((json)=>{
-      if(json.length == 0){
-        alert("Incorrect email or password");
-      }
-      else {
-        this.props.dispatch(ChangePage(2));
-      }
+    })
 
-        
+    var json = await resp.json();
+    if(json.length == 0){
+      alert("Incorrect email or password");
     }
-      
-    );
+    else {
+      this.props.dispatch(ChangePage(2));
+    }
   }
+
+    handlePage=()=>{
+      this.props.dispatch(ChangePage(2));
+    }
 
   render() {
 
@@ -102,7 +101,7 @@ class Login extends React.Component {
       <View style={styles.butView}>
         <TouchableOpacity
           style={styles.butBox}
-          onPress={this.handleSelect}
+          onPress={this.handlePage}
           >
           <Text
             style={[styles.textContainer, {color:'white',}]}
