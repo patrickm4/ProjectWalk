@@ -30,6 +30,7 @@ class Login extends React.Component {
   }
 
   handleEmail=(text)=>{
+    console.log("email", text);
     this.email = text;
   }
 
@@ -55,13 +56,14 @@ class Login extends React.Component {
       this.props.dispatch(ChangePage(2));
     }
   }
-  
+
   handlePage=()=>{
     this.props.dispatch(ChangePage(2));
   }
-  
+
 
     handlePage=()=>{
+      console.log("page2");
       this.props.dispatch(ChangePage(2));
     }
 
@@ -87,7 +89,7 @@ class Login extends React.Component {
         >WALK</Text>
       <View style={styles.textInputBox}>
         <TextInput
-          placeholder="Email"
+          placeholder="Emaildd"
           style={{height: 40, width: 250, borderColor: 'gray', borderWidth: 1}}
           underlineColorAndroid='transparent'
           autoCapitalize="none"
