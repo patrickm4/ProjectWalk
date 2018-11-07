@@ -34,7 +34,7 @@ class Settings extends React.Component {
      {/* GENERAL  */}
         <Text style={styles.genHeader}>General Settings</Text>
         <Text style={styles.notificationsBody}>Notifications</Text>
-        <Switch style={styles.notifySwitch}/>
+        <Switch style={styles.notSwitch}/>
    
         <Text style={styles.locationBody}>Show My Location</Text>
         <Switch style={styles.locationSwitch}/>
@@ -82,32 +82,96 @@ const styles = StyleSheet.create({
   destIcon: {
     width: 65,
     height: 65,
-    left: 50,
+    left: 65,
     top: -42 
   },
   dCaption: {
     top: -37,
-    left: 45
+    left: 60
   },
 settIcon:  {
     top: -125,
     width: 80,
     height: 70,
-    right: -190
+    right: -210
 },
 sCaption: {
     top: -125,
-    right: -200
+    right: -220
 },
 genHeader: {
     fontSize: 25,
-    left: -100,
+    left: -90,
     top: -100
 },
 notificationsBody: {
     fontSize: 16,
-    left: -100,
+    left: -90,
     top: -90
+},
+notSwitch: {
+   right: -220,
+    top: -119
+},
+locationBody: {
+    fontSize: 16,
+    top: -100,
+    left: -90
+},
+locationSwitch: {
+    right:-220,
+    top: -126
+},
+mapHeader: {
+    left: -90,
+    fontSize: 25,
+    top: -100
+},
+DAbody: {
+    top: -90,
+    left: -90,
+    fontSize: 16
+},
+DASwitch: {
+    top:-120,
+    right:-220
+},
+NBEbody: {
+    top: -100,
+    left: -90,
+    fontSize: 16
+},
+NBESwitch: {
+    top: -127,
+    right:-220
+},
+STbody: {
+    top: -105,
+    left: -90,
+    fontSize: 16
+},
+STSwitch: {
+    top: -132,
+    right: -220
+},
+Checkbody:{
+    fontSize: 16,
+    top: -100,
+    left: -90
+},
+checkSwitch: {
+    top: -130,
+    right: -220
+},
+profileHeader: {
+    fontSize: 25,
+    left: -90,
+    top: -100
+},
+buttonView:{
+    left: -100,
+    top: -95,
+    alignItems: 'flex-start'
 }
 
 });
