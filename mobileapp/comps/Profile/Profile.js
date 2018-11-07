@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
     left: 200,
     height: 40,
     backgroundColor: "#ECF0F1",
+    borderRadius: 50
   },
   name: {
     color: "#ECF0F1",
@@ -80,13 +81,14 @@ const styles = StyleSheet.create({
     width: 80,
     height: 80,
     position: 'absolute',
-    top: 155,
+    top: 270,
     left: 210,
     borderRadius: 80,
   },
   destText: {
     color: "#ECF0F1",
     top: -5,
+    fontSize: 16
   },
   homeInfo: {
     width: 80,
@@ -99,19 +101,21 @@ const styles = StyleSheet.create({
   homeInfoText: {
     color: "#ECF0F1",
     top: -10,
-    left: -117
+    left: -117,
+    fontSize: 16
   },
   settings: {
     width: 90,
     height: 80,
     position: 'absolute',
-    top: 400,
+    top: 415,
     right: 90,
   },
   settText: {
     color: "#ECF0F1",
     bottom: 28,
-    right: -111
+    right: -111,
+    fontSize: 16
   }
 });
 

@@ -7,6 +7,8 @@ import {ChangePage} from "../../redux/actions.js";
 //
 
 class Settings extends React.Component {
+    
+
   render() {
     return (
       <View style={styles.container}>
@@ -54,7 +56,7 @@ class Settings extends React.Component {
       <Text style={styles.profileHeader}>Profile Settings</Text>
       <View style={styles.buttonView}>
       <Button title="Change Password" style={styles.passwordBut} />
-      <Button title="Change Email" style={styles.emailBut} />
+      <Button title="Change Email" style={styles.emailBut}/>
       </View>
         </View>
 
