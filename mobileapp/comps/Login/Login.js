@@ -17,7 +17,7 @@ class Login extends React.Component {
     var fd = new FormData();
     fd.append("email", this.email);
     fd.append("password", this.password);
-    fetch("http://localhost:8888/insertusers.php", {
+    fetch("http://a07yd3a6okcidwap.cbetxkdyhwsb.us-east-1.rds.amazonaws.com/insertusers.php", {
       method: "POST",
       body:fd
     }).then((resp)=>{
@@ -43,7 +43,7 @@ class Login extends React.Component {
     fd.append("email", this.email);
     fd.append("password", this.password);
 
-    var resp = await fetch("http://localhost:8888/selectuser.php",{
+    var resp = await fetch("http://a07yd3a6okcidwap.cbetxkdyhwsb.us-east-1.rds.amazonaws.com/selectuser.php",{
       method:"POST",
       body:fd
     })
@@ -89,7 +89,7 @@ class Login extends React.Component {
         >WALK</Text>
       <View style={styles.textInputBox}>
         <TextInput
-          placeholder="Emaildd"
+          placeholder="Email"
           style={{height: 40, width: 250, borderColor: 'gray', borderWidth: 1}}
           underlineColorAndroid='transparent'
           autoCapitalize="none"

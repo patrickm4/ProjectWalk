@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $conn = new PDO("mysql:host=localhost;dbname=walk", "root", "root");
+    $conn = new PDO("mysql:host=a07yd3a6okcidwap.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=p3slyityqr9arsx2", "gupazml2ebchali0", "ng7ehrbl1adzi9q0");
 }
 catch(PDOException $e)
 {
