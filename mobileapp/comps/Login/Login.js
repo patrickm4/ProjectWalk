@@ -17,7 +17,7 @@ class Login extends React.Component {
     var fd = new FormData();
     fd.append("email", this.email);
     fd.append("password", this.password);
-    fetch("http://a07yd3a6okcidwap.cbetxkdyhwsb.us-east-1.rds.amazonaws.com/insertusers.php", {
+    fetch("http://localhost:8888/insertusers.php", {
       method: "POST",
       body:fd
     }).then((resp)=>{
@@ -30,7 +30,6 @@ class Login extends React.Component {
   }
 
   handleEmail=(text)=>{
-    console.log("email", text);
     this.email = text;
   }
 
@@ -43,7 +42,7 @@ class Login extends React.Component {
     fd.append("email", this.email);
     fd.append("password", this.password);
 
-    var resp = await fetch("http://a07yd3a6okcidwap.cbetxkdyhwsb.us-east-1.rds.amazonaws.com/selectuser.php",{
+    var resp = await fetch("http://localhost:8888/selectuser.php",{
       method:"POST",
       body:fd
     })
@@ -56,14 +55,13 @@ class Login extends React.Component {
       this.props.dispatch(ChangePage(2));
     }
   }
-
+  
   handlePage=()=>{
     this.props.dispatch(ChangePage(2));
   }
-
+  
 
     handlePage=()=>{
-      console.log("page2");
       this.props.dispatch(ChangePage(2));
     }
 

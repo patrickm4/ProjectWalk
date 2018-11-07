@@ -1,9 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
-//import {Location, Permissions} from 'expo';
-//mport { MapView } from 'expo';
+import {Location, Permissions} from 'expo';
+import { MapView } from 'expo';
 //import { MapViewDirections } from 'expo';
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 
 import {connect} from "react-redux";
 import {ChangePage} from "../../redux/actions.js";
@@ -40,7 +39,7 @@ class Destination extends React.Component {
 
   componentDidMount() {
     this.watchID = navigator.geolocation.watchPosition((position) => {
-      console.log(position);
+
       var initialRegion = {
         latitude: position.coords.latitude,
         longitude: position.coords.longitude,
@@ -48,11 +47,12 @@ class Destination extends React.Component {
         longitudeDelta: 0.0421,
       }
 
-      console.log(initialRegion);
       this.setState({
-           InitialPosition: initialRegion,
-           markerPosition: initialRegion
+           InitialPosition: initialRegion
          });
+      this.setState({
+            markerPosition: initialRegion
+        });
     },
       (error) => this.setState({ error: error.message }),
       { enableHighAccuracy: true, timeout: 200000, maximumAge: 1000 },
@@ -74,7 +74,7 @@ class Destination extends React.Component {
   render() {
 
     const GOOGLE_MAPS_APIKEY  = "AIzaSyAjmeDspw7sOJc5knFHDAw0XOnBB1cVA70";
-    console.log(this.state.InitialPosition);
+
     return (
       <View style={styles.container}>
         <TouchableOpacity
