@@ -5,13 +5,24 @@ import {connect} from "react-redux";
 import {ChangePage} from "../../redux/actions.js"
 
 class Profile extends React.Component {
+
+  handleButton=(switchPageNum)=>{
+    this.props.dispatch(ChangePage(switchPageNum))
+  }
+
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.pcontainer}>
 
-
-        <Image style={styles.destinations} source={require('./assets/img/dest1.png')} />
+        <TouchableOpacity
+          style={styles.destinations}
+          onPress={this.handleButton.bind(this, 4)}
+          >
+          {/*page 3 is the settings page*/}
+          <Image style={{width: 80, height: 80}} source={require('./assets/img/dest1.png')} />
+        </TouchableOpacity>
         <Text style={styles.destText}>Destinations</Text>
+
 
          <Image style={styles.pImage} source={require('./assets/img/default.jpg')} />
          <Text style={styles.name}>Your Name</Text>
@@ -20,11 +31,18 @@ class Profile extends React.Component {
         <Image style={styles.homeInfo} source={require('./assets/img/homeinfo.png')} />
         <Text style={styles.homeInfoText}>Home Info</Text>
 
-        <Image style={styles.settings} source={require('./assets/img/settings.png')} />
-        <Text style={styles.settText}>Settings</Text>
+        <TouchableOpacity
+          style={styles.settings}
+          onPress={this.handleButton.bind(this, 3)}
+          >
+          {/*page 3 is the settings page*/}
+          <Image style={{width: 90, height: 80}} source={require('./assets/img/settings.png')} />
+        </TouchableOpacity>
+          <Text style={styles.settText}>Settings</Text>
+
 
         <View style={styles.logoutButton}>
-          <Button title="LOG OUT" onPress={""} />
+          <Button title="LOG OUT" onPress={this.handleButton.bind(this, 1)} />
         </View>
 
 
@@ -34,18 +52,20 @@ class Profile extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  pcontainer: {
     flex: 1,
     backgroundColor: '#33936F',
+    width: 500,
     alignItems: 'center',
     justifyContent: 'center',
   },
   logoutButton: {
     position: 'absolute',
     bottom: 10,
-    left: 145,
+    left: 200,
     height: 40,
     backgroundColor: "#ECF0F1",
+    borderRadius: 50
   },
   name: {
     color: "#ECF0F1",
@@ -61,38 +81,41 @@ const styles = StyleSheet.create({
     width: 80,
     height: 80,
     position: 'absolute',
-    top: 150,
-    left: 150,
-    borderRadius: 40,
+    top: 270,
+    left: 210,
+    borderRadius: 80,
   },
   destText: {
     color: "#ECF0F1",
-    top: -10,
+    top: -5,
+    fontSize: 16
   },
   homeInfo: {
     width: 80,
     height: 80,
     position: 'absolute',
-    top: 290,
-    left: 30,
+    top: 410,
+    left: 90,
     borderRadius: 40,
   },
   homeInfoText: {
     color: "#ECF0F1",
     top: -10,
-    left: -117
+    left: -117,
+    fontSize: 16
   },
   settings: {
     width: 90,
     height: 80,
     position: 'absolute',
-    top: 295,
-    right: 25,
+    top: 415,
+    right: 90,
   },
   settText: {
     color: "#ECF0F1",
     bottom: 28,
-    right: -112
+    right: -111,
+    fontSize: 16
   }
 });
 

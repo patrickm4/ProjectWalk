@@ -3,6 +3,8 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 
 import Login from "./Login/Login";
 import Profile from "./Profile/Profile";
+import Settings from "./Settings/Settings";
+import Destination from './Destination/Destination';
 
 import {connect} from "react-redux";
 import {ChangePage} from "../redux/actions.js"
@@ -26,6 +28,12 @@ class Main extends React.Component {
       case 2:
       curpage = <Profile/>
         break;
+      case 3:
+      curpage = <Settings/>
+        break;
+      case 4:
+      curpage = <Destination/>
+          break;
     }
 
 
