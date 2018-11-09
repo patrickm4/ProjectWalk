@@ -1,0 +1,253 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:1-29:12
+MERGED from [com.facebook.react:react-native:0.57.4] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/react-native-0.57.4.aar/1f8591d9850a6b23f3941304806054fb/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/64d170750445143032e0058cd02e4f41/AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-maps] /Users/dejanduric/Desktop/DetachedWalk/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/50905cade211c1c245416130b121cdb3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/695974fc9e04ac6023f5eee8b684d138/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/7206691c2978e9f6cef5b9b68a0a6b8b/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/abea1a6d85361410c482c48ad24abe38/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/c788f54433e6caf5d64274fe2ad6a5ff/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/dead8d3a7c98cd415ac30da7439ca7f5/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.2.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/1b3509440d203d5108840f3ab64b4379/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/41e97941fab0e99ed9224705775a4ee6/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/437f291afd10132bf3fa0fbb0083768b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/a6b3f934fad7aa6f8986a5e079da553f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/79bc3292cb8c6a2fa412c54e6e2c49da/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ae4714a0e76e194694550b9351201d26/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/af90463487dbc7e9e3a9ce79944b00eb/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/312138f1831cb93597d300da3703f6ce/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/1d9164c42042ab15860fae0f1b1473b7/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/d7568f7675f45278650baa5d69fb10dd/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/69c5796d4d506d802b87bad613413c29/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/6506e53defbf10340f0fe726da335ab3/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/3fa6465c81108200d339524d556ab937/AndroidManifest.xml:1:1-3:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6a752abc6196f6e6d4a6dfe1bc9d5a15/AndroidManifest.xml:2:1-13:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9b149e4e4f5f0652219c93bf836ae717/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/044d7309b2e500f65104db2f84e70950/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/8a165f9de6526a0ee1744344854d4bd1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/a95e5740e6c6dc3d7c37ad5463b55f8e/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/3823d443dceae4be3769a72f306ee26a/AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/34723a8a3fd5db55dc15f09765d9a643/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/50c5aad9a44be53dcceecda2b446cf75/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/44333f5d103a28c71288d2c5f2d36e90/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/be653362b889663e8829c058e20c131a/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:1-29:12
+	package
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:2:5-31
+		INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:1-29:12
+		INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:1-29:12
+		INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:react-native-maps] /Users/dejanduric/Desktop/DetachedWalk/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/release/AndroidManifest.xml:9:5-67
+MERGED from [:react-native-maps] /Users/dejanduric/Desktop/DetachedWalk/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/release/AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/7206691c2978e9f6cef5b9b68a0a6b8b/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/7206691c2978e9f6cef5b9b68a0a6b8b/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.57.4] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/react-native-0.57.4.aar/1f8591d9850a6b23f3941304806054fb/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.4] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/react-native-0.57.4.aar/1f8591d9850a6b23f3941304806054fb/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:5:22-75
+application
+ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:7:5-27:19
+MERGED from [com.facebook.react:react-native:0.57.4] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/react-native-0.57.4.aar/1f8591d9850a6b23f3941304806054fb/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.57.4] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/react-native-0.57.4.aar/1f8591d9850a6b23f3941304806054fb/AndroidManifest.xml:13:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/7206691c2978e9f6cef5b9b68a0a6b8b/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/7206691c2978e9f6cef5b9b68a0a6b8b/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/abea1a6d85361410c482c48ad24abe38/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/abea1a6d85361410c482c48ad24abe38/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/c788f54433e6caf5d64274fe2ad6a5ff/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/c788f54433e6caf5d64274fe2ad6a5ff/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/dead8d3a7c98cd415ac30da7439ca7f5/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/dead8d3a7c98cd415ac30da7439ca7f5/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:25.2.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/1b3509440d203d5108840f3ab64b4379/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/1b3509440d203d5108840f3ab64b4379/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/41e97941fab0e99ed9224705775a4ee6/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/41e97941fab0e99ed9224705775a4ee6/AndroidManifest.xml:25:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/6506e53defbf10340f0fe726da335ab3/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/6506e53defbf10340f0fe726da335ab3/AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/3fa6465c81108200d339524d556ab937/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/3fa6465c81108200d339524d556ab937/AndroidManifest.xml:2:3-17
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6a752abc6196f6e6d4a6dfe1bc9d5a15/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6a752abc6196f6e6d4a6dfe1bc9d5a15/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/a95e5740e6c6dc3d7c37ad5463b55f8e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/a95e5740e6c6dc3d7c37ad5463b55f8e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/3823d443dceae4be3769a72f306ee26a/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/3823d443dceae4be3769a72f306ee26a/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/44333f5d103a28c71288d2c5f2d36e90/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/44333f5d103a28c71288d2c5f2d36e90/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/be653362b889663e8829c058e20c131a/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/be653362b889663e8829c058e20c131a/AndroidManifest.xml:5:5-20
+	android:label
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:9:7-39
+	android:icon
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:10:7-41
+	android:allowBackup
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:name
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:8:7-38
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:13:7-15:66
+	android:value
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:15:9-64
+	android:name
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:14:9-54
+activity#com.detachedwalk.MainActivity
+ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:16:7-25:18
+	android:label
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:18:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:20:9-51
+	android:configChanges
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:19:9-79
+	android:name
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:17:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:21:9-24:25
+action#android.intent.action.MAIN
+ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:22:13-65
+	android:name
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:22:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:23:13-73
+	android:name
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:23:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:26:7-84
+	android:name
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:26:17-81
+uses-sdk
+INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+MERGED from [com.facebook.react:react-native:0.57.4] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/react-native-0.57.4.aar/1f8591d9850a6b23f3941304806054fb/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.4] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/react-native-0.57.4.aar/1f8591d9850a6b23f3941304806054fb/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/64d170750445143032e0058cd02e4f41/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/64d170750445143032e0058cd02e4f41/AndroidManifest.xml:20:5-44
+MERGED from [:react-native-maps] /Users/dejanduric/Desktop/DetachedWalk/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-maps] /Users/dejanduric/Desktop/DetachedWalk/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/release/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/50905cade211c1c245416130b121cdb3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/50905cade211c1c245416130b121cdb3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/695974fc9e04ac6023f5eee8b684d138/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/695974fc9e04ac6023f5eee8b684d138/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/7206691c2978e9f6cef5b9b68a0a6b8b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/7206691c2978e9f6cef5b9b68a0a6b8b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/abea1a6d85361410c482c48ad24abe38/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/abea1a6d85361410c482c48ad24abe38/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/c788f54433e6caf5d64274fe2ad6a5ff/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/c788f54433e6caf5d64274fe2ad6a5ff/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/dead8d3a7c98cd415ac30da7439ca7f5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/dead8d3a7c98cd415ac30da7439ca7f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.2.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/1b3509440d203d5108840f3ab64b4379/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/1b3509440d203d5108840f3ab64b4379/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/41e97941fab0e99ed9224705775a4ee6/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/41e97941fab0e99ed9224705775a4ee6/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/437f291afd10132bf3fa0fbb0083768b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/437f291afd10132bf3fa0fbb0083768b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/a6b3f934fad7aa6f8986a5e079da553f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/a6b3f934fad7aa6f8986a5e079da553f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/79bc3292cb8c6a2fa412c54e6e2c49da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/79bc3292cb8c6a2fa412c54e6e2c49da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ae4714a0e76e194694550b9351201d26/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ae4714a0e76e194694550b9351201d26/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/af90463487dbc7e9e3a9ce79944b00eb/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/af90463487dbc7e9e3a9ce79944b00eb/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/312138f1831cb93597d300da3703f6ce/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/312138f1831cb93597d300da3703f6ce/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/1d9164c42042ab15860fae0f1b1473b7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/1d9164c42042ab15860fae0f1b1473b7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/d7568f7675f45278650baa5d69fb10dd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/d7568f7675f45278650baa5d69fb10dd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/69c5796d4d506d802b87bad613413c29/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/69c5796d4d506d802b87bad613413c29/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/6506e53defbf10340f0fe726da335ab3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/6506e53defbf10340f0fe726da335ab3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6a752abc6196f6e6d4a6dfe1bc9d5a15/AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6a752abc6196f6e6d4a6dfe1bc9d5a15/AndroidManifest.xml:5:5-43
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9b149e4e4f5f0652219c93bf836ae717/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9b149e4e4f5f0652219c93bf836ae717/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/044d7309b2e500f65104db2f84e70950/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/044d7309b2e500f65104db2f84e70950/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/8a165f9de6526a0ee1744344854d4bd1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/8a165f9de6526a0ee1744344854d4bd1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/a95e5740e6c6dc3d7c37ad5463b55f8e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/a95e5740e6c6dc3d7c37ad5463b55f8e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/3823d443dceae4be3769a72f306ee26a/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/3823d443dceae4be3769a72f306ee26a/AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/34723a8a3fd5db55dc15f09765d9a643/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/34723a8a3fd5db55dc15f09765d9a643/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/50c5aad9a44be53dcceecda2b446cf75/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/50c5aad9a44be53dcceecda2b446cf75/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/44333f5d103a28c71288d2c5f2d36e90/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/44333f5d103a28c71288d2c5f2d36e90/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/be653362b889663e8829c058e20c131a/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/be653362b889663e8829c058e20c131a/AndroidManifest.xml:4:5-43
+INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.2.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/1b3509440d203d5108840f3ab64b4379/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:react-native-maps] /Users/dejanduric/Desktop/DetachedWalk/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/release/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from [:react-native-maps] /Users/dejanduric/Desktop/DetachedWalk/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/release/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/7206691c2978e9f6cef5b9b68a0a6b8b/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/7206691c2978e9f6cef5b9b68a0a6b8b/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/7206691c2978e9f6cef5b9b68a0a6b8b/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/7206691c2978e9f6cef5b9b68a0a6b8b/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/7206691c2978e9f6cef5b9b68a0a6b8b/AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/abea1a6d85361410c482c48ad24abe38/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/abea1a6d85361410c482c48ad24abe38/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/abea1a6d85361410c482c48ad24abe38/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/abea1a6d85361410c482c48ad24abe38/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/dead8d3a7c98cd415ac30da7439ca7f5/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6a752abc6196f6e6d4a6dfe1bc9d5a15/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6a752abc6196f6e6d4a6dfe1bc9d5a15/AndroidManifest.xml:8:9-10:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/dead8d3a7c98cd415ac30da7439ca7f5/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] /Users/dejanduric/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/dead8d3a7c98cd415ac30da7439ca7f5/AndroidManifest.xml:24:13-58
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:1-29:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:1-29:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/dejanduric/Desktop/DetachedWalk/android/app/src/main/AndroidManifest.xml:1:1-29:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

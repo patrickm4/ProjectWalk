@@ -1,0 +1,4 @@
+#Wed Nov 07 18:35:38 PST 2018
+base.0=/Users/dejanduric/Desktop/DetachedWalk/android/app/build/intermediates/transforms/dexMerger/release/0
+renamed.0=classes.dex
+path.0=classes.dex
