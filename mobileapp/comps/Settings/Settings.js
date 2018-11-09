@@ -14,6 +14,7 @@ class Settings extends React.Component {
       <View style={styles.container}>
 
     {/* TOP BAR  */}
+        {/* hello  */}
       <View style={{flexDirection: "row"}}>
         <View style={{flexDirection: "column"}}>
         <View>
