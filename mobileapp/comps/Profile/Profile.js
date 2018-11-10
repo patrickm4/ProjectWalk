@@ -27,9 +27,11 @@ class Profile extends React.Component {
          <Image style={styles.pImage} source={require('./assets/img/default.jpg')} />
          <Text style={styles.name}>Your Name</Text>
         {/*^^we can decide later on how we are going to input the user's name into this text, like a function*/}
-
+        
+        <View style={styles.homeSett}>
         <Image style={styles.homeInfo} source={require('./assets/img/homeinfo.png')} />
-        <Text style={styles.homeInfoText}>Home Info</Text>
+    
+            
 
         <TouchableOpacity
           style={styles.settings}
@@ -38,8 +40,7 @@ class Profile extends React.Component {
           {/*page 3 is the settings page*/}
           <Image style={{width: 90, height: 80}} source={require('./assets/img/settings.png')} />
         </TouchableOpacity>
-          <Text style={styles.settText}>Settings</Text>
-
+         </View>
 
         <View style={styles.logoutButton}>
           <Button title="LOG OUT" onPress={this.handleButton.bind(this, 1)} />
@@ -60,10 +61,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   logoutButton: {
-    position: 'absolute',
-    bottom: 10,
-    left: 200,
-    height: 40,
+    alignItems: 'center',
+    bottom: -150,
+    display: 'flex',
+    flexDirection: 'row',
+    //height: 40,
     backgroundColor: "#ECF0F1",
     borderRadius: 50
   },
@@ -80,43 +82,39 @@ const styles = StyleSheet.create({
   destinations: {
     width: 80,
     height: 80,
-    position: 'absolute',
-    top: 270,
-    left: 210,
     borderRadius: 80,
+    justifyContent: 'center',
+   // marginBottom: 5
   },
   destText: {
     color: "#ECF0F1",
     top: -5,
     fontSize: 16
   },
+  homeSett: {
+   flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignContent: 'space-between',
+   //alignItems: 'baseline',
+   // alignItems: 'stretch',
+   // flex: .5
+  // display: 'flex',
+   
+  },
   homeInfo: {
     width: 80,
     height: 80,
-    position: 'absolute',
-    top: 410,
-    left: 90,
     borderRadius: 40,
-  },
-  homeInfoText: {
-    color: "#ECF0F1",
-    top: -10,
-    left: -117,
-    fontSize: 16
+    //justifyContent: 'flex-start',
+    
   },
   settings: {
     width: 90,
     height: 80,
-    position: 'absolute',
-    top: 415,
-    right: 90,
+    //justifyContent:'space-between',
+   // alignItems: 'flex-start'
   },
-  settText: {
-    color: "#ECF0F1",
-    bottom: 28,
-    right: -111,
-    fontSize: 16
-  }
+ 
 });
 
 function mapStateToProps(state){
