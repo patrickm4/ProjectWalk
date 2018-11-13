@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, Switch, Button} from 'react-native';
+//import { responsiveHeight, responsiveWidth, responsiveFontSize } from 'react-native-responsive-dimensions';
 
 import {connect} from "react-redux";
 import {ChangePage} from "../../redux/actions.js";
@@ -35,6 +36,7 @@ class Settings extends React.Component {
 </View>
 
      {/* GENERAL  */}
+    
         <Text style={styles.genHeader}>General Settings</Text>
         <Text style={styles.notificationsBody}>Notifications</Text>
         <Switch style={styles.notSwitch}/>
@@ -71,12 +73,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    flexWrap: 'wrap',
+   
+    
   },
   profileIcon: {
     width: 65,
     height: 65,
-    left: -90,
-    top: 40
+    top: 45,
+    
+   alignItems: 'flex-start'
   },
   pCaption: {
     left: -80,
@@ -113,8 +119,10 @@ notificationsBody: {
     top: -90
 },
 notSwitch: {
-   right: -220,
-    top: -119
+  right: 10,
+    top: -119,
+ // flexWrap: 'nowrap'
+  alignItems: 'flex-end'
 },
 locationBody: {
     fontSize: 16,
@@ -172,7 +180,7 @@ profileHeader: {
     top: -100
 },
 buttonView:{
-    left: -100,
+   left: -100,
     top: -95,
     alignItems: 'flex-start'
 }

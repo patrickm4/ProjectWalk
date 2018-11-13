@@ -56,18 +56,20 @@ const styles = StyleSheet.create({
   pcontainer: {
     flex: 1,
     backgroundColor: '#33936F',
-    width: 500,
+    width: 425,
     alignItems: 'center',
     justifyContent: 'center',
   },
   logoutButton: {
     alignItems: 'center',
     bottom: -150,
-    display: 'flex',
-    flexDirection: 'row',
+    //display: 'flex',
+    //flexDirection: 'row',
     //height: 40,
     backgroundColor: "#ECF0F1",
-    borderRadius: 50
+    borderRadius: 50,
+   // width: 10,
+    //height: 10
   },
   name: {
     color: "#ECF0F1",
@@ -93,12 +95,12 @@ const styles = StyleSheet.create({
   },
   homeSett: {
    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    alignContent: 'space-between',
+    //justifyContent: 'space-evenly',
+    //alignContent: 'space-between',
    //alignItems: 'baseline',
    // alignItems: 'stretch',
    // flex: .5
-  // display: 'flex',
+  //display: 'flex',
    
   },
   homeInfo: {
@@ -106,6 +108,8 @@ const styles = StyleSheet.create({
     height: 80,
     borderRadius: 40,
     //justifyContent: 'flex-start',
+    left: 5,
+    
     
   },
   settings: {
