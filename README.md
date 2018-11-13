@@ -1,7 +1,7 @@
 # ProjectWalk
-# Foobar
+# header
 
-Foobar is a Python library for dealing with word pluralization.
+template
 
 ## Installation
 
