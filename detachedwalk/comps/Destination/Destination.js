@@ -2,10 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 //import {Location, Permissions} from 'expo';
 //import { MapView } from 'expo';
-//import { MapViewDirections } from 'expo';
+//import { MapViewDirections } from 'react-native-maps-directions';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import { Polyline } from 'react-native-maps';
 import Geolocation from 'react-native-geolocation-service';
+
+import proj4 from 'proj4';
 
 import {connect} from "react-redux";
 import {ChangePage} from "../../redux/actions.js";
@@ -18,6 +20,7 @@ class Destination extends React.Component {
     error: null,
     latitude: null,
     longitude: null,
+    convertedUTM: [],
 
     InitialPosition: {
       latitude: 49.2485,
@@ -35,6 +38,24 @@ class Destination extends React.Component {
       latitude: 49.1987,
       longitude: -122.8125
     }
+  }
+
+  handleCrime=()=>{
+
+
+  }
+
+  testCheckpoint=()=>{
+    var utm = "+proj=utm +zone=10";
+    var wgs84 = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs";
+    //console.log(proj4(utm,wgs84,[491104.5, 5456842.89]));
+
+    this.setState({
+      convertedUTM: proj4(utm,wgs84,[491104.5, 5456842.89])
+    })
+
+    console.log(this.state.convertedUTM[0]);
+    console.log("testchk");
   }
 
   componentDidMount() {
@@ -143,18 +164,24 @@ class Destination extends React.Component {
         <View
           style={{padding: 15}}
           >
-        <Image
-          style={{width:80, height: 80}}
-          source={require('./img/Checkpoint.png')}
-          />
+          <TouchableOpacity>
+            <Image
+              style={{width:80, height: 80}}
+              source={require('./img/Checkpoint.png')}
+              />
+          </TouchableOpacity>
         </View>
         <View
           style={{padding: 15}}
           >
-          <Image
-            style={{width:80, height: 80}}
-            source={require('./img/Nearby.png')}
-            />
+          <TouchableOpacity
+            onPress={this.handleCrime()}
+            >
+            <Image
+              style={{width:80, height: 80}}
+              source={require('./img/Nearby.png')}
+              />
+          </TouchableOpacity>
         </View>
       </View>
     </View>
@@ -181,7 +208,7 @@ const styles = StyleSheet.create({
  destNav: {
    height:20,
    backgroundColor: "#fff",
-   flex: 1.4,
+   flex: 1.7,
    flexDirection: "row",
    justifyContent: "space-between",
  }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
+import proj4 from 'proj4';
 
 import {connect} from "react-redux";
 import {ChangePage} from "../../redux/actions.js";
@@ -10,7 +11,12 @@ class Login extends React.Component {
   password="";
 
   state = {
-    users:[]
+    users:[],
+    dlatlng:"",
+    x: 491104.5,
+    y: 5456842.89,
+    zone:10,
+    zoneL:'U'
   }
 
   handleFetch=()=>{
@@ -63,7 +69,24 @@ class Login extends React.Component {
 
 
     handlePage=()=>{
+
+      {/*
+      var utmObj = require('utm-latlng');
+
+      var utm = new utmObj();
+
+      utm.convertUtmToLatLng(this.state.x, this.state.y, this.state.zone, this.state.zoneL);
+      utm.convertLatLngToUtm(49.264276, -123.122274);
+      console.log(utm);
+      */}
+
+
+      var utm = "+proj=utm +zone=10";
+      var wgs84 = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs";
+      console.log(proj4(utm,wgs84,[491104.5, 5456842.89]));
+
       console.log("page2");
+
       this.props.dispatch(ChangePage(2));
     }
 
