@@ -14,32 +14,51 @@ class Profile extends React.Component {
     return (
       <View style={styles.pcontainer}>
 
-        <TouchableOpacity
-          style={styles.destinations}
-          onPress={this.handleButton.bind(this, 4)}
+        <View
+          style={{height:100, alignItems: "center"}}
           >
-          {/*page 3 is the settings page*/}
-          <Image style={{width: 80, height: 80}} source={require('./assets/img/dest1.png')} />
-        </TouchableOpacity>
-        <Text style={styles.destText}>Destinations</Text>
+          <TouchableOpacity
+            style={styles.destinations}
+            onPress={this.handleButton.bind(this, 4)}
+            >
+            {/*page 3 is the settings page*/}
+            <Image style={{width: 80, height: 80}} source={require('./assets/img/dest1.png')} />
+          </TouchableOpacity>
+          <Text style={styles.destText}>Destinations</Text>
+        </View>
 
-
-         <Image style={styles.pImage} source={require('./assets/img/default.jpg')} />
-         <Text style={styles.name}>Your Name</Text>
-        {/*^^we can decide later on how we are going to input the user's name into this text, like a function*/}
-        
-        <View style={styles.homeSett}>
-        <Image style={styles.homeInfo} source={require('./assets/img/homeinfo.png')} />
-    
-            
-
-        <TouchableOpacity
-          style={styles.settings}
-          onPress={this.handleButton.bind(this, 3)}
+        <View
+          style={{flex:0, alignItems: 'center', flexDirection:"row"}}
           >
-          {/*page 3 is the settings page*/}
-          <Image style={{width: 90, height: 80}} source={require('./assets/img/settings.png')} />
-        </TouchableOpacity>
+          <View
+            style={{flex:1, alignItems: 'center'}}
+            >
+            <Image style={{width: 90, height: 90, borderRadius: 50}} source={require('./assets/img/homeinfo.png')} />
+            <Text style={styles.destText}>HomeInfo</Text>
+          </View>
+
+          <View
+            style={{flex:0, alignItems: 'center'}}
+            >
+            <Image
+              style={{width:100, height:100, borderRadius:50}}
+              source={require('./assets/img/default.jpg')} />
+            <Text style={styles.name}>Your Name</Text>
+            {/*^^we can decide later on how we are going to input the user's name into this text, like a function*/}
+          </View>
+
+          <View
+            style={{flex:1, alignItems: 'center'}}
+            >
+            <TouchableOpacity
+              onPress={this.handleButton.bind(this, 3)}
+              >
+              {/*page 3 is the settings page*/}
+              <Image style={{width: 90, height: 85}} source={require('./assets/img/settings.png')} />
+              <Text style={styles.destText}>Settings</Text>
+            </TouchableOpacity>
+          </View>
+
          </View>
 
         <View style={styles.logoutButton}>
@@ -101,7 +120,7 @@ const styles = StyleSheet.create({
    // alignItems: 'stretch',
    // flex: .5
   //display: 'flex',
-   
+
   },
   homeInfo: {
     width: 80,
@@ -109,8 +128,8 @@ const styles = StyleSheet.create({
     borderRadius: 40,
     //justifyContent: 'flex-start',
     left: 5,
-    
-    
+
+
   },
   settings: {
     width: 90,
@@ -118,7 +137,7 @@ const styles = StyleSheet.create({
     //justifyContent:'space-between',
    // alignItems: 'flex-start'
   },
- 
+
 });
 
 function mapStateToProps(state){
