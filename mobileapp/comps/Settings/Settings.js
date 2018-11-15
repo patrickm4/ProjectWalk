@@ -36,11 +36,17 @@ class Settings extends React.Component {
 </View>
 
      {/* GENERAL  */}
-    
+        <View style={{flex:1}}>
         <Text style={styles.genHeader}>General Settings</Text>
+        
+        <View style={{flex:0 ,flexDirection:'row',alignSelf:'flex-start'}}>
         <Text style={styles.notificationsBody}>Notifications</Text>
-        <Switch style={styles.notSwitch}/>
-   
+        </View>
+        <View style={{flex:3, alignSelf:'center'}}>
+        <Switch/>
+            </View></View>
+        
+
         <Text style={styles.locationBody}>Show My Location</Text>
         <Switch style={styles.locationSwitch}/>
 
@@ -60,6 +66,7 @@ class Settings extends React.Component {
       <View style={styles.buttonView}>
       <Button title="Change Password" style={styles.passwordBut} />
       <Button title="Change Email" style={styles.emailBut}/>
+          
       </View>
         </View>
 
@@ -73,7 +80,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    flexWrap: 'wrap',
+    //flexWrap: 'wrap',
    
     
   },
@@ -110,28 +117,19 @@ sCaption: {
 },
 genHeader: {
     fontSize: 25,
-    left: -90,
-    top: -100
+    
 },
 notificationsBody: {
     fontSize: 16,
-    left: -90,
-    top: -90
+    
 },
-notSwitch: {
-  right: 10,
-    top: -119,
- // flexWrap: 'nowrap'
-  alignItems: 'flex-end'
-},
+
 locationBody: {
     fontSize: 16,
-    top: -100,
-    left: -90
+    
 },
 locationSwitch: {
-    right:-220,
-    top: -126
+    
 },
 mapHeader: {
     left: -90,
