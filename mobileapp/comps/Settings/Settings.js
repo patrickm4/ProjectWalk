@@ -65,7 +65,7 @@ class Settings extends React.Component {
 
       {/*PROFILE SETTINGS*/}
       <Text style={styles.profileHeader}>Profile Settings</Text>
-      <View style={{height:100, alignItems:'flex-start'}}>
+      <View style={{flex:1, alignItems:'flex-start'}}>
       <Button title="Change Password" style={styles.passwordBut} />
       <Button title="Change Email" style={styles.emailBut}/>
           
@@ -133,38 +133,26 @@ DAbody: {
    
     fontSize: 16
 },
-DASwitch: {
-  
-},
+
 NBEbody: {
     fontSize: 16
 },
-NBESwitch: {
-   
-},
+
 STbody: {
  
     fontSize: 16
 },
-STSwitch: {
-    
-},
+
 Checkbody:{
     fontSize: 16,
    
 },
-checkSwitch: {
-   
-},
+
 profileHeader: {
     fontSize: 25,
    
-},
-buttonView:{
- 
-    top: -95,
-    alignItems: 'flex-start'
 }
+
 
 });
 
