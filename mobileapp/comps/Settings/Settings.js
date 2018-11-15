@@ -36,16 +36,17 @@ class Settings extends React.Component {
 </View>
 
      {/* GENERAL  */}
-        
+        <View style={{flex:1}}>
         <Text style={styles.genHeader}>General Settings</Text>
-        <View style={{flex:1}}>
-        <View style={{flex: 3, alignItems: 'flex-start'}}>
+        
+        <View style={{flex:0 ,flexDirection:'row',alignSelf:'flex-start'}}>
         <Text style={styles.notificationsBody}>Notifications</Text>
-        <View style={{flex:1}}>
-        <Switch style={styles.notSwitch}/>
-            </View>
         </View>
-            </View>
+        <View style={{flex:3, alignSelf:'center'}}>
+        <Switch/>
+            </View></View>
+        
+
         <Text style={styles.locationBody}>Show My Location</Text>
         <Switch style={styles.locationSwitch}/>
 
@@ -79,7 +80,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    flexWrap: 'wrap',
+    //flexWrap: 'wrap',
    
     
   },
@@ -116,27 +117,19 @@ sCaption: {
 },
 genHeader: {
     fontSize: 25,
-    left: -90,
-    top: -100
+    
 },
 notificationsBody: {
     fontSize: 16,
-    left: -90,
-    top: -90
+    
 },
-notSwitch: {
-  
-    top: -119,
- 
-},
+
 locationBody: {
     fontSize: 16,
-    top: -100,
-    left: -90
+    
 },
 locationSwitch: {
-    right:-220,
-    top: -126
+    
 },
 mapHeader: {
     left: -90,
