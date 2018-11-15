@@ -36,11 +36,16 @@ class Settings extends React.Component {
 </View>
 
      {/* GENERAL  */}
-    
+        
         <Text style={styles.genHeader}>General Settings</Text>
+        <View style={{flex:1}}>
+        <View style={{flex: 3, alignItems: 'flex-start'}}>
         <Text style={styles.notificationsBody}>Notifications</Text>
+        <View style={{flex:1}}>
         <Switch style={styles.notSwitch}/>
-   
+            </View>
+        </View>
+            </View>
         <Text style={styles.locationBody}>Show My Location</Text>
         <Switch style={styles.locationSwitch}/>
 
@@ -60,6 +65,7 @@ class Settings extends React.Component {
       <View style={styles.buttonView}>
       <Button title="Change Password" style={styles.passwordBut} />
       <Button title="Change Email" style={styles.emailBut}/>
+          
       </View>
         </View>
 
@@ -119,10 +125,9 @@ notificationsBody: {
     top: -90
 },
 notSwitch: {
-  right: 10,
+  
     top: -119,
- // flexWrap: 'nowrap'
-  alignItems: 'flex-end'
+ 
 },
 locationBody: {
     fontSize: 16,
