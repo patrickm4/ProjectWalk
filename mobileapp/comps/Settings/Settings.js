@@ -15,36 +15,38 @@ class Settings extends React.Component {
       <View style={styles.container}>
 
     {/* TOP BAR  */}
-        {/* hello  */}
-      <View style={{flexDirection: "row"}}>
-        <View style={{flexDirection: "column"}}>
-        <View>
+
+      
+        <View style={{ flex: 0,flexDirection: 'row', justifyContent: 'space-between',height: 150,width:340}}>
+        <View style={{flexDirection:'column',alignSelf:'center'}}>
           <Image style={styles.profileIcon} source={require('./assets/img/profile.png')}/>
           <Text style={styles.pCaption}>Profile</Text>
         </View>
         
-        <View>
+        <View style={{flexDirection:'column',alignSelf:'center'}}>
           <Image style={styles.destIcon} source={require('./assets/img/dest1.png')}/>
         <Text style={styles.dCaption}>Destinations</Text>
         </View>
          
-        <View>    
+        <View style={{flexDirection:'column', alignSelf:'center'}}>    
         <Image style={styles.settIcon} source={require('./assets/img/settings.png')}/>
         <Text style={styles.sCaption}>Settings</Text>
     </View>
   </View>       
-</View>
+
 
      {/* GENERAL  */}
-        <View style={{flex:1}}>
+        <View style={{flex:0,alignSelf:'flex-start'}}>
         <Text style={styles.genHeader}>General Settings</Text>
-        
-        <View style={{flex:0 ,flexDirection:'row',alignSelf:'flex-start'}}>
-        <Text style={styles.notificationsBody}>Notifications</Text>
+          
+        <View style={{flex:0,alignItems:'flex-start',flexDirection:'row'}}>
+        <Text style={{fontSize:16}}>Notifications</Text>
         </View>
-        <View style={{flex:3, alignSelf:'center'}}>
+          
+        <View style={{flex:0, alignSelf:'flex-start'}}>
         <Switch/>
-            </View></View>
+            </View>
+        </View>
         
 
         <Text style={styles.locationBody}>Show My Location</Text>
@@ -63,7 +65,7 @@ class Settings extends React.Component {
 
       {/*PROFILE SETTINGS*/}
       <Text style={styles.profileHeader}>Profile Settings</Text>
-      <View style={styles.buttonView}>
+      <View style={{height:100, alignItems:'flex-start'}}>
       <Button title="Change Password" style={styles.passwordBut} />
       <Button title="Change Email" style={styles.emailBut}/>
           
@@ -78,49 +80,40 @@ class Settings extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 2,
     backgroundColor: '#fff',
-    //flexWrap: 'wrap',
+   flexWrap: 'wrap',
    
     
   },
   profileIcon: {
     width: 65,
     height: 65,
-    top: 45,
+   
     
-   alignItems: 'flex-start'
+ 
   },
   pCaption: {
-    left: -80,
-    top: 45
+    
   },
   destIcon: {
     width: 65,
     height: 65,
-    left: 65,
-    top: -42 
+    
   },
-  dCaption: {
-    top: -37,
-    left: 60
-  },
+
 settIcon:  {
-    top: -125,
+   
     width: 80,
     height: 70,
-    right: -210
+    
 },
 sCaption: {
-    top: -125,
-    right: -220
+  
 },
 genHeader: {
     fontSize: 25,
-    
-},
-notificationsBody: {
-    fontSize: 16,
+    //height: -10
     
 },
 
@@ -132,53 +125,43 @@ locationSwitch: {
     
 },
 mapHeader: {
-    left: -90,
+  
     fontSize: 25,
-    top: -100
+  
 },
 DAbody: {
-    top: -90,
-    left: -90,
+   
     fontSize: 16
 },
 DASwitch: {
-    top:-120,
-    right:-220
+  
 },
 NBEbody: {
-    top: -100,
-    left: -90,
     fontSize: 16
 },
 NBESwitch: {
-    top: -127,
-    right:-220
+   
 },
 STbody: {
-    top: -105,
-    left: -90,
+ 
     fontSize: 16
 },
 STSwitch: {
-    top: -132,
-    right: -220
+    
 },
 Checkbody:{
     fontSize: 16,
-    top: -100,
-    left: -90
+   
 },
 checkSwitch: {
-    top: -130,
-    right: -220
+   
 },
 profileHeader: {
     fontSize: 25,
-    left: -90,
-    top: -100
+   
 },
 buttonView:{
-   left: -100,
+ 
     top: -95,
     alignItems: 'flex-start'
 }
