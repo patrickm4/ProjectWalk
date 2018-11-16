@@ -46,21 +46,26 @@ class Login extends React.Component {
 
   handleSelect=async ()=>{
     var fd = new FormData();
+    console.log("handleSelectStart");
     fd.append("email", this.email);
     fd.append("password", this.password);
 
-    var resp = await fetch("http://a07yd3a6okcidwap.cbetxkdyhwsb.us-east-1.rds.amazonaws.com/selectuser.php",{
+    var resp = await fetch("https://walk2.herokuapp.com/mysql/selectuser.php",{
       method:"POST",
       body:fd
     })
 
     var json = await resp.json();
-    if(json.length == 0){
+    console.log(json);
+    if(json.length == 0 || "" || null){
+      console.log("ifistrue");
       alert("Incorrect email or password");
     }
     else {
+      console.log("ifisfalse");
       this.props.dispatch(ChangePage(2));
     }
+    console.log("handleSelectEND");
   }
 
   handlePage=()=>{
@@ -88,6 +93,10 @@ class Login extends React.Component {
       console.log("page2");
 
       this.props.dispatch(ChangePage(2));
+    }
+
+    handleSignUp=()=>{
+      this.props.dispatch(ChangePage(5));
     }
 
   render() {
@@ -131,18 +140,29 @@ class Login extends React.Component {
       <View style={styles.butView}>
         <TouchableOpacity
           style={styles.butBox}
-          onPress={this.handlePage}
+          onPress={this.handleSelect}
           >
           <Text
             style={[styles.textContainer, {color:'white',}]}
             >
-            Login</Text>
+            LOGIN</Text>
         </TouchableOpacity>
       </View>
       <View
         style={{position:'absolute', bottom:0}}
         >
-        <Text>Dont have an account? Sign up</Text>
+        <View
+            style={{flexDirection: "row"}}
+            >
+            <Text>Dont have an account?</Text>
+            <TouchableOpacity
+              onPress={this.handleSignUp}
+              >
+              <Text
+
+                >Sign up</Text>
+            </TouchableOpacity>
+          </View>
       </View>
       </View>
     );

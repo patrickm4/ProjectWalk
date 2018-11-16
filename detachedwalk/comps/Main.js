@@ -5,6 +5,8 @@ import Login from "./Login/Login";
 import Profile from "./Profile/Profile";
 import Settings from "./Settings/Settings";
 import Destination from './Destination/Destination';
+import Signup from './Signup/Signup';
+import Central from './Central';
 
 import {connect} from "react-redux";
 import {ChangePage} from "../redux/actions.js"
@@ -34,6 +36,12 @@ class Main extends React.Component {
       case 4:
       curpage = <Destination/>
           break;
+      case 5:
+      curpage = <Signup />
+        break;
+      case 6:
+      curpage = <Central/>
+        break;
     }
 
 

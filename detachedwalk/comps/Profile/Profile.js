@@ -14,32 +14,56 @@ class Profile extends React.Component {
     return (
       <View style={styles.pcontainer}>
 
-        <TouchableOpacity
-          style={styles.destinations}
-          onPress={this.handleButton.bind(this, 4)}
+        <View
+          style={{height:100, alignItems: "center"}}
           >
-          {/*page 3 is the settings page*/}
-          <Image style={{width: 80, height: 80}} source={require('./assets/img/dest1.png')} />
-        </TouchableOpacity>
-        <Text style={styles.destText}>Destinations</Text>
+          <TouchableOpacity
+            style={styles.destinations}
+            onPress={this.handleButton.bind(this, 4)}
+            >
+            {/*page 3 is the settings page*/}
+            <Image style={{width: 80, height: 80}} source={require('./assets/img/dest1.png')} />
+          </TouchableOpacity>
+          <Text style={styles.destText}>Destinations</Text>
+        </View>
 
-
-         <Image style={styles.pImage} source={require('./assets/img/default.jpg')} />
-         <Text style={styles.name}>Your Name</Text>
-        {/*^^we can decide later on how we are going to input the user's name into this text, like a function*/}
-
-        <Image style={styles.homeInfo} source={require('./assets/img/homeinfo.png')} />
-        <Text style={styles.homeInfoText}>Home Info</Text>
-
-        <TouchableOpacity
-          style={styles.settings}
-          onPress={this.handleButton.bind(this, 3)}
+        <View
+          style={{flex:0, alignItems: 'center', flexDirection:"row"}}
           >
-          {/*page 3 is the settings page*/}
-          <Image style={{width: 90, height: 80}} source={require('./assets/img/settings.png')} />
-        </TouchableOpacity>
-          <Text style={styles.settText}>Settings</Text>
+          <View
+            style={{flex:1, alignItems: 'center'}}
+            >
+            <TouchableOpacity
+              onPress={this.handleButton.bind(this, 6)}
+              >
+              <Image style={{width: 90, height: 90, borderRadius: 50}} source={require('./assets/img/homeinfo.png')} />
+              <Text style={styles.destText}>HomeInfo</Text>
+            </TouchableOpacity>
+          </View>
 
+          <View
+            style={{flex:0, alignItems: 'center'}}
+            >
+            <Image
+              style={{width:100, height:100, borderRadius:50}}
+              source={require('./assets/img/default.jpg')} />
+            <Text style={styles.name}>Your Name</Text>
+            {/*^^we can decide later on how we are going to input the user's name into this text, like a function*/}
+          </View>
+
+          <View
+            style={{flex:1, alignItems: 'center'}}
+            >
+            <TouchableOpacity
+              onPress={this.handleButton.bind(this, 3)}
+              >
+              {/*page 3 is the settings page*/}
+              <Image style={{width: 90, height: 85}} source={require('./assets/img/settings.png')} />
+              <Text style={styles.destText}>Settings</Text>
+            </TouchableOpacity>
+          </View>
+
+         </View>
 
         <View style={styles.logoutButton}>
           <Button title="LOG OUT" onPress={this.handleButton.bind(this, 1)} />
@@ -55,17 +79,20 @@ const styles = StyleSheet.create({
   pcontainer: {
     flex: 1,
     backgroundColor: '#33936F',
-    width: 500,
+    width: 425,
     alignItems: 'center',
     justifyContent: 'center',
   },
   logoutButton: {
-    position: 'absolute',
-    bottom: 10,
-    left: 200,
-    height: 40,
+    alignItems: 'center',
+    bottom: -150,
+    //display: 'flex',
+    //flexDirection: 'row',
+    //height: 40,
     backgroundColor: "#ECF0F1",
-    borderRadius: 50
+    borderRadius: 50,
+   // width: 10,
+    //height: 10
   },
   name: {
     color: "#ECF0F1",
@@ -80,43 +107,41 @@ const styles = StyleSheet.create({
   destinations: {
     width: 80,
     height: 80,
-    position: 'absolute',
-    top: 100,
-    left: 210,
     borderRadius: 80,
+    justifyContent: 'center',
+   // marginBottom: 5
   },
   destText: {
     color: "#ECF0F1",
     top: -5,
     fontSize: 16
   },
+  homeSett: {
+   flexDirection: 'row',
+    //justifyContent: 'space-evenly',
+    //alignContent: 'space-between',
+   //alignItems: 'baseline',
+   // alignItems: 'stretch',
+   // flex: .5
+  //display: 'flex',
+
+  },
   homeInfo: {
     width: 80,
     height: 80,
-    position: 'absolute',
-    top: 410,
-    left: 90,
     borderRadius: 40,
-  },
-  homeInfoText: {
-    color: "#ECF0F1",
-    top: -10,
-    left: -117,
-    fontSize: 16
+    //justifyContent: 'flex-start',
+    left: 5,
+
+
   },
   settings: {
     width: 90,
     height: 80,
-    position: 'absolute',
-    top: 415,
-    right: 90,
+    //justifyContent:'space-between',
+   // alignItems: 'flex-start'
   },
-  settText: {
-    color: "#ECF0F1",
-    bottom: 28,
-    right: -111,
-    fontSize: 16
-  }
+
 });
 
 function mapStateToProps(state){

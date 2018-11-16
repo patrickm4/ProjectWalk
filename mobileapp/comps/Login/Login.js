@@ -39,6 +39,7 @@ class Login extends React.Component {
   }
 
   handleSelect=async ()=>{
+    console.log("handleselectStart");
     var fd = new FormData();
     fd.append("email", this.email);
     fd.append("password", this.password);
@@ -49,12 +50,13 @@ class Login extends React.Component {
     })
 
     var json = await resp.json();
-    if(json.length == 0){
+    if(json.length == "" || 0 || null){
       alert("Incorrect email or password");
     }
     else {
       this.props.dispatch(ChangePage(2));
     }
+    console.log("handleselectEND");
   }
 
   handlePage=()=>{
@@ -65,6 +67,10 @@ class Login extends React.Component {
     handlePage=()=>{
       console.log("page2");
       this.props.dispatch(ChangePage(2));
+    }
+
+    handleSignUp=()=>{
+      console.log("yeas");
     }
 
   render() {
@@ -108,7 +114,7 @@ class Login extends React.Component {
       <View style={styles.butView}>
         <TouchableOpacity
           style={styles.butBox}
-          onPress={this.handlePage}
+          onPress={this.handleSelect}
           >
           <Text
             style={[styles.textContainer, {color:'white',}]}
@@ -119,7 +125,16 @@ class Login extends React.Component {
       <View
         style={{position:'absolute', bottom:0}}
         >
-        <Text>Dont have an account? Sign up</Text>
+          <View
+            style={{flexDirection: "row"}}
+            >
+            <Text>Dont have an account?</Text>
+            <TouchableOpacity
+              onPress={this.handleSignUp}
+              >
+              <Text>Sign up</Text>
+            </TouchableOpacity>
+          </View>
       </View>
       </View>
     );
