@@ -74,33 +74,26 @@ class Destination extends React.Component {
     })
   }
 
-  handleCrime=()=>{
-    console.log("handleCrimeCall");
-    //console.log(this.state.convertedUTM[0]);
-    var inLong = this.state.convertedUTM[0];
-    var inLat = this.state.convertedUTM[1]
-    var inMark = {
-      latitude: inLat,
-      longitude: inLong
-    }
-    var zoomMark = {
-      latitude: inLat,
-      longitude: inLong,
-      latitudeDelta: 0.0922,
-      longitudeDelta: 0.0421,
-    }
-    this.setState({
-      markerPos: inMark
-    })
+  handleCrime=async ()=>{
+    // console.log("handleCrimeCall");
+    // //console.log(this.state.convertedUTM[0]);
+    // var inLong = this.state.convertedUTM[0];
+    // var inLat = this.state.convertedUTM[1]
+    // var inMark = {
+    //   latitude: inLat,
+    //   longitude: inLong
+    // }
+    // var zoomMark = {
+    //   latitude: inLat,
+    //   longitude: inLong,
+    //   latitudeDelta: 0.0922,
+    //   longitudeDelta: 0.0421,
+    // }
+    // this.setState({
+    //   markerPos: inMark
+    // })
     //this.x = this.state.convertedUTM[0];
     //this.y = this.state.convertedUTM[1];
-
-  }
-
-  handleCheckpoint=async()=>{
-    //console.log(this.state.convertedUTM[0], this.state.convertedUTM[1])
-    //console.log("testchk");
-
     var fd = new FormData();
 
     fd.append("x", this.x);
@@ -130,10 +123,15 @@ class Destination extends React.Component {
 
       //convertedLongLat.push(proj4(utm,wgs84,[newX, newY]);
 
-      this.nearCrimesLongLat.push(convertedLongLat)
+      this.nearCrimesLongLat.push({
+        lat:convertedLongLat[1],
+        lng:convertedLongLat[0]
+      })
     }
-
-    console.log("yawayeet", this.nearCrimesLongLat[0][1], this.nearCrimesLongLat[0][0], this.nearCrimesLongLat[1][1], this.nearCrimesLongLat[1][0], );
+    this.setState({
+      newArr:this.nearCrimesLongLat
+    })
+    /*  console.log("yawayeet", this.nearCrimesLongLat[0][1], this.nearCrimesLongLat[0][0], this.nearCrimesLongLat[1][1], this.nearCrimesLongLat[1][0], );
 
     for(var r = 0; r < this.nearCrimesLongLat.length ; r++){
     console.log("check nearcrimeslonglat", this.nearCrimesLongLat[r])
@@ -146,6 +144,63 @@ class Destination extends React.Component {
     //var wgs84 = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs";
     //console.log(proj4(utm,wgs84,[491104.5, 5456842.89]));
     //convertedUTM: proj4(utm,wgs84,[491104.5, 5456842.89])
+    */
+
+
+  }
+
+  handleCheckpoint=async()=>{
+    var fd = new FormData();
+
+    fd.append("x", this.x);
+    fd.append("y", this.y);
+
+    var resp = await fetch("https://walk2.herokuapp.com/mysql/searchCrimeData.php",{
+      method:"POST",
+      body:fd
+    })
+
+    var json = await resp.json();
+    console.log(json);
+    this.nearCrimes = json;
+    console.log("yeetyaw", this.nearCrimes);
+
+    for(var i = 0 ; i < this.nearCrimes.length ;i++){
+      var convertedLongLat = [];
+      var utm = "+proj=utm +zone=10";
+      var wgs84 = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs";
+      var newX = parseInt(this.nearCrimes[i].x);
+      var newY = parseInt(this.nearCrimes[i].y);
+      console.log("parsed", newX, newY, "desrap");
+      console.log(proj4(utm,wgs84,[newX, newY]));
+      convertedLongLat = proj4(utm,wgs84,[newX, newY]);
+      console.log("thisvar", convertedLongLat[0]);
+      //convertedLongLat: proj4(utm,wgs84,[491104.5, 5456842.89])
+
+      //convertedLongLat.push(proj4(utm,wgs84,[newX, newY]);
+
+      this.nearCrimesLongLat.push({
+        lat:convertedLongLat[1],
+        lng:convertedLongLat[0]
+      })
+    }
+    this.setState({
+      newArr:this.nearCrimesLongLat
+    })
+  /*  console.log("yawayeet", this.nearCrimesLongLat[0][1], this.nearCrimesLongLat[0][0], this.nearCrimesLongLat[1][1], this.nearCrimesLongLat[1][0], );
+
+    for(var r = 0; r < this.nearCrimesLongLat.length ; r++){
+    console.log("check nearcrimeslonglat", this.nearCrimesLongLat[r])
+    this.locationObj = Object.assign({a: this.nearCrimesLongLat[r][1], b: this.nearCrimesLongLat[r][0]}, this.nearCrimesLongLat[r]);
+    console.log("assignedObj", this.locationObj);
+    this.state.newArr.push(this.locationObj);
+    }
+    console.log("dNewArr", this.state.newArr[0].a);
+    //var utm = "+proj=utm +zone=10";
+    //var wgs84 = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs";
+    //console.log(proj4(utm,wgs84,[491104.5, 5456842.89]));
+    //convertedUTM: proj4(utm,wgs84,[491104.5, 5456842.89])
+    */
 
   }
 
@@ -199,16 +254,16 @@ class Destination extends React.Component {
 
 
   render() {
-
+    //console.log(this.state.newArr);
     var newPoints = this.state.newArr.map((obj, i)=>{
       return(
-        <View
+        <MapView.Marker
           key={i}
-          style={{width:100, height:30, backgroundColor: "#333"}}
-          >
-          <Text>{obj.a}</Text>
-          <Text>{obj.b}</Text>
-        </View>
+          coordinate={{
+            latitude: obj.lat,
+            longitude: obj.lng
+          }}
+          />
       )
     })
 
@@ -221,31 +276,18 @@ class Destination extends React.Component {
     //console.log(this.state.InitialPosition);
     return (
       <View style={styles.container}>
+        {newPoints}
+        <View style={{height:100}}></View>
         <View
-          style={{height:200, flex:1}}
-          >
-        <TouchableOpacity
-          style={{left:0, position: "absolute"}}
-          onPress={this.handlePage.bind(this, 2)}
-          >
-          <Text
-            style={{fontSize:30}}
-            >Back</Text>
-        </TouchableOpacity>
-        </View>
-        <View
-          style={{height:200, flex: 2}}
+          style={{height:200, flex: 2, alignItems: 'center'}}
           >
           <TextInput
             style={{height: 40, width: 100, borderColor: 'gray', borderWidth: 1}}
             placeholder="Destination"
             underlineColorAndroid='transparent'
             />
-          {newPoints}
-          
           <Text> Current Location </Text>
-
-              <Text> {this.state.error} </Text>
+          <Text> {this.state.error} </Text>
 
         </View>
       <MapView
@@ -254,7 +296,7 @@ class Destination extends React.Component {
         initialRegion={this.state.InitialPosition}
         region={this.state.InitialPosition}
       >
-
+        {newPoints}
         <MapView.Marker
           coordinate={this.state.markerPosition}
           />
@@ -318,9 +360,10 @@ const styles = StyleSheet.create({
    //position: 'absolute',
    //bottom: 0,
    //justifyContent: 'flex-end',
-   height: 400,
-   width: 400,
+   //height: 100,
+   //width: 400,
    flex: 5,
+   backgroundColor: '#333'
  },
  destNav: {
    height:20,

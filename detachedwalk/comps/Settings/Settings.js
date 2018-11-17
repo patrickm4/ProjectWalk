@@ -14,25 +14,7 @@ class Settings extends React.Component {
     return (
       <View style={styles.container}>
 
-    {/* TOP BAR  */}
 
-
-        <View style={{ flex: 0,flexDirection: 'row', justifyContent: 'space-between',height: 150,width:340}}>
-        <View style={{flexDirection:'column',alignSelf:'center'}}>
-          <Image style={styles.profileIcon} source={require('./assets/img/profile.png')}/>
-          <Text style={styles.pCaption}>Profile</Text>
-        </View>
-
-        <View style={{flexDirection:'column',alignSelf:'center'}}>
-          <Image style={styles.destIcon} source={require('./assets/img/dest1.png')}/>
-        <Text style={styles.dCaption}>Destinations</Text>
-        </View>
-
-        <View style={{flexDirection:'column', alignSelf:'center'}}>
-        <Image style={styles.settIcon} source={require('./assets/img/settings.png')}/>
-        <Text style={styles.sCaption}>Settings</Text>
-    </View>
-  </View>
 
 
      {/* GENERAL  */}
@@ -86,27 +68,6 @@ const styles = StyleSheet.create({
 
 
   },
-  profileIcon: {
-    width: 65,
-    height: 65,
-  },
-  pCaption: {
-
-  },
-  destIcon: {
-    width: 65,
-    height: 65,
-  },
-
-settIcon:  {
-
-    width: 80,
-    height: 70,
-
-},
-sCaption: {
-
-},
 genHeader: {
     fontSize: 25,
     //height: -10

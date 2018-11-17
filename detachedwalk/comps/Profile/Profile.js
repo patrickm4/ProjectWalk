@@ -2,12 +2,14 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, Image, TouchableOpacity } from 'react-native';
 
 import {connect} from "react-redux";
-import {ChangePage} from "../../redux/actions.js"
+import {ChangePage} from "../../redux/actions.js";
+import {ChangeDisplay} from "../../redux/actions.js";
 
 class Profile extends React.Component {
 
-  handleButton=(switchPageNum)=>{
-    this.props.dispatch(ChangePage(switchPageNum))
+  handleButton=(switchPageNum, switchDispNum)=>{
+    this.props.dispatch(ChangePage(switchPageNum));
+    this.props.dispatch(ChangeDisplay(switchDispNum));
   }
 
   render() {
@@ -19,7 +21,7 @@ class Profile extends React.Component {
           >
           <TouchableOpacity
             style={styles.destinations}
-            onPress={this.handleButton.bind(this, 4)}
+            onPress={this.handleButton.bind(this, 6, 6)}
             >
             {/*page 3 is the settings page*/}
             <Image style={{width: 80, height: 80}} source={require('./assets/img/dest1.png')} />
@@ -55,7 +57,7 @@ class Profile extends React.Component {
             style={{flex:1, alignItems: 'center'}}
             >
             <TouchableOpacity
-              onPress={this.handleButton.bind(this, 3)}
+              onPress={this.handleButton.bind(this, 6, 7)}
               >
               {/*page 3 is the settings page*/}
               <Image style={{width: 90, height: 85}} source={require('./assets/img/settings.png')} />
@@ -66,7 +68,12 @@ class Profile extends React.Component {
          </View>
 
         <View style={styles.logoutButton}>
-          <Button title="LOG OUT" onPress={this.handleButton.bind(this, 1)} />
+          <TouchableOpacity
+            style={{width: 120, height: 45, backgroundColor: '#33936F', alignItems: 'center'}}
+            onPress={this.handleButton.bind(this, 1)}
+            >
+            <Text style={{color:'white', fontSize: 16, lineHeight: 50}}>LOG OUT</Text>
+          </TouchableOpacity>
         </View>
 
 
