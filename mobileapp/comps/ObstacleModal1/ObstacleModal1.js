@@ -10,7 +10,7 @@ export default class ObstacleModal1 extends React.Component {
         </View>
         
         <View style={{flex:4,alignItems:'center'}}>
-        <Text style={{color:'white', fontWeight:'bold',fontSize:32, margin:10,textTransform:'uppercase'}}>Obsticle!</Text>
+        <Text style={{color:'white', fontWeight:'bold',fontSize:32, margin:10,textTransform:'uppercase'}}>Obstacle!</Text>
         <Text style={{color:'white', fontSize:20}}>
         0.5km away from you</Text>
         
