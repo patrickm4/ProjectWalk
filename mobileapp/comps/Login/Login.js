@@ -114,7 +114,7 @@ class Login extends React.Component {
       <View style={styles.butView}>
         <TouchableOpacity
           style={styles.butBox}
-          onPress={this.handleSelect}
+          onPress={this.handlePage}
           >
           <Text
             style={[styles.textContainer, {color:'white',}]}
